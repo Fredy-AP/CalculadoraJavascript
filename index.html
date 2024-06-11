@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousedown', function(e) {
+            if (e.button === 0) { // 0 es el botón izquierdo del ratón
+                e.preventDefault();
+            }
+        });
+    </script>
     <h1></h1>
     <h2></h2>
     <div class="calculadora">
